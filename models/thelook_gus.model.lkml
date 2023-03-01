@@ -119,6 +119,12 @@ explore: inventory_items {
 }
 
 explore: orders {
+  view_name: orders
+  access_filter: {
+    field: orders.status
+    user_attribute: test_rowlevelsec
+  }
+
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
