@@ -15,7 +15,7 @@
     filters:
       orders.created_year: '2019,2018'
     sorts: [orders.created_quarter]
-    subtotals: [orders.created_quarter]
+    subtotals: [orders.created_year]
     limit: 500
     dynamic_fields: [{category: table_calculation, expression: 'offset(${products.total_retail_price},4)',
         label: Prior, value_format: !!null '', value_format_name: !!null '', _kind_hint: measure,
