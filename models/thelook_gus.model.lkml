@@ -5,6 +5,7 @@ connection: "thelook"
 include: "/views/**/*.view"
 
 include: "rowlevelsec.dashboard"
+include: "/dashboards/*.dashboard"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
