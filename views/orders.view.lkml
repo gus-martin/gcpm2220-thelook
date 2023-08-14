@@ -27,7 +27,7 @@ view: orders {
       quarter,
       year
     ]
-    sql: ${TABLE}.created_at ;;
+    sql: DATE_ADD(${TABLE}.created_at, INTERVAL 4 YEAR ) ;;
   }
 
   # Here's what a typical dimension looks like in LookML.
